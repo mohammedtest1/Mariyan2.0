@@ -25,7 +25,7 @@ from youtubesearchpython import SearchVideos
 def download_song(_, message):
     query = " ".join(message.command[1:])  
     print(query)
-    m = message.reply("**🔄 sᴇᴀʀᴄʜɪɴɢ... **")
+    m = message.reply("**⚡**")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
