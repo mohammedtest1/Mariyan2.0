@@ -107,7 +107,7 @@ async def get_thumb(videoid):
         )
         draw.text(
             (600, 200),
-            f"NOW PLAYING",
+            f"𝐘𝐄𝐋𝐋𝐎𝐖 𝐌𝐔𝐒𝐈𝐂",
             fill="white",
             stroke_width=2,
             stroke_fill="yellow",
