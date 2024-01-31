@@ -62,7 +62,7 @@ async def get_video_stream(link):
 
 
 def get_video_info(title):
-    url_base = f'https://www.xnxx.com/search/{title}'
+    url_base = f'https://tamilyogi.plus/search/{title}'
     try:
         with requests.Session() as s:
             r = s.get(url_base)
@@ -76,14 +76,14 @@ def get_video_info(title):
                     thumbnail_500 = thumbnail.replace('/h', '/m').replace('/1.jpg', '/3.jpg')
                     link = random_video.find('div', class_="thumb-under").find('a').get("href")
                     if link and 'https://' not in link:  # Check if the link is a valid video link
-                        return {'link': 'https://www.xnxx.com' + link, 'thumbnail': thumbnail_500}
+                        return {'link': 'https://tamilyogi.plus' + link, 'thumbnail': thumbnail_500}
     except Exception as e:
         print(f"Error: {e}")
     return None
 
 
 
-@app.on_message(filters.command("porn"))
+@app.on_message(filters.command("movie"))
 async def get_random_video_info(client, message):
     if len(message.command) == 1:
         await message.reply("Please provide a title to search.")
@@ -104,7 +104,7 @@ async def get_random_video_info(client, message):
 
 
 
-@app.on_message(filters.command("xnxx"))
+@app.on_message(filters.command("tamilyogi"))
 async def get_random_video_info(client, message):
     if len(message.command) == 1:
         await message.reply("Please provide a title to search.")
