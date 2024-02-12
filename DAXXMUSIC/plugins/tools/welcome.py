@@ -133,13 +133,14 @@ async def greet_group(_, member: ChatMemberUpdated):
             photo=welcomeimg,
             caption=f"""
 **🌟 𝐖𖽞𖾘𖽽𖽙𖾕𖾔 𝐓𖽙 ❤️‍🩹 {member.chat.title}
+
 ☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★
 
-𝐍𖽖𖽧𖽞 😼  {user.mention}
+𝐍𖽖𖽧𖽞 😼 : {user.mention}
 
-𝐈𖽴 😸  {user.id}
+𝐈𖽴 😸 : {user.id}
 
-𝐔𖾗𖾔𖾜ɴ𖽖𖾕𖾔 💋  @{user.username}
+𝐔𖾗𖾔𖾜ɴ𖽖𖾕𖾔 💋 : @{user.username}
 
 ☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★
 
