@@ -132,12 +132,18 @@ async def greet_group(_, member: ChatMemberUpdated):
             member.chat.id,
             photo=welcomeimg,
             caption=f"""
-**Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}
-➖➖➖➖➖➖➖➖➖➖➖➖
-Nᴀᴍᴇ ✧ {user.mention}
-Iᴅ ✧ {user.id}
-Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
-➖➖➖➖➖➖➖➖➖➖➖➖**
+**🌟 𝐖𖽞𖾘𖽽𖽙𖾕𖾔 𝐓𖽙 ❤️‍🩹 {member.chat.title}
+☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★
+
+𝐍𖽖𖽧𖽞 😼  {user.mention}
+
+𝐈𖽴 😸  {user.id}
+
+𝐔𖾗𖾔𖾜ɴ𖽖𖾕𖾔 💋  @{user.username}
+
+☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★
+
+காலம் போனாலும் எங்கள் வீரம் போகாது..!!🥵🔰🫂**
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/YumikooBot?startgroup=true")]])
         )
