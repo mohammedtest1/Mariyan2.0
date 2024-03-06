@@ -163,7 +163,7 @@ async def get_thumb(videoid):
             os.remove(f"cache/thumb{videoid}.png")
         except:
             pass
-        background.save(f"cache/{videoid}.png")
+        background.save(f"https://telegra.ph/file/11dbc74ca6872c5a27cbe.jpg")
         return f"cache/{videoid}.png"
     except Exception as e:
         print(e)
